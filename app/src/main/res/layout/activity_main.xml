@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn"
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Enter Amount" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="From Which Currency"
+            android:gravity="center"
+            android:background="@drawable/txt_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/inr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR" />
+
+            <RadioButton
+                android:id="@+id/euro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EURO" />
+
+            <RadioButton
+                android:id="@+id/dollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dollar" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="To Which Currency"
+            android:background="@drawable/txt_bg"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/toinr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR" />
+
+            <RadioButton
+                android:id="@+id/toeuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EURO" />
+
+            <RadioButton
+                android:id="@+id/todollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dollar" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:text="Converted Amount" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/convert"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:text="Convert currency" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
